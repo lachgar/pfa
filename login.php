@@ -14,6 +14,7 @@ if (isset($_POST['btn_submit'])) {
             $_SESSION['nom'] = $em->getNom().' '.$em->getPrenom();
             $_SESSION['role'] = $em->getRole();
             $_SESSION['email'] = $em->getEmail();
+$_SESSION['email'] = $em->getEmail();
             header('Location:./index.php');
         }
         else{
